@@ -4,5 +4,8 @@
 #awscli_user_home_dir: /home/ubuntu
 awscli_profiles:
   - name: default
-    access_key: PutYourAccessKeyHere
-    secret_access_key: PutYourSecretKeyHere
+#EXAMPLE
+# awscli_profiles:
+#   - name: default
+#     access_key: PutYourAccessKeyHere
+#     secret_access_key: PutYourSecretKeyHere

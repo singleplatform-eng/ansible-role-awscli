@@ -13,19 +13,8 @@
 
 # region defaults to the 'ec2_region' variable from ec2.py, else 'us-east-1'
 - name: Copy .aws/config
-  copy:
-    content: |
-      {% for profile in awscli_profiles %}
-      {% if profile.name == 'default' %}
-      [{{profile.name}}]
-      {% else %}
-      [profile {{profile.name}}]
-      {% endif %}
-      aws_access_key_id={{profile.access_key}}
-      aws_secret_access_key={{profile.secret_access_key}}
-      output={{ profile.output | default('json') }}
-      region={{ profile.region if profile.region is defined else ec2_region | default('us-east-1') }}
-      {% endfor %}
+  template:
+    src: aws_config.j2
     dest: "{{awscli_user_home_dir}}/.aws/config"
     owner: "{{awscli_user}}"
     group: "{{awscli_user}}"
