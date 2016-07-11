@@ -12,3 +12,7 @@
   roles:
     - awscli
 ```
+
+### Dependencies
+  - [python](https://www.python.org/downloads/)
+  - [pip](https://pip.pypa.io/en/stable/installing/)
