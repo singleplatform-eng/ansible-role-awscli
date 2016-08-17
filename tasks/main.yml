@@ -24,3 +24,4 @@
   lineinfile:
     line: complete -C `which aws_completer` aws
     dest: "{{awscli_user_home_dir}}/.profile"
+    create: yes
