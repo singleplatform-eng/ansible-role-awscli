@@ -38,6 +38,14 @@ Example Playbook
       roles:
         - awscli
 
+Dependencies
+------------------
+
+- [python](https://www.python.org/downloads/)
+- [pip](https://pip.pypa.io/en/stable/installing/)
+
+[ansible-role-python](https://github.com/singleplatform-eng/ansible-role-python) can satisfy these dependencies.
+
 Author Information
 ------------------
 
