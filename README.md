@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/singleplatform-eng/ansible-role-awscli.svg?branch=master)](https://travis-ci.org/singleplatform-eng/ansible-role-awscli)
 
 ansible-role-awscli
 =========
